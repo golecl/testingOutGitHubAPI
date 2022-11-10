@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/golecl/testingOutGitHubAPI/issues"
   },
-  "homepage": "https://github.com/golecl/testingOutGitHubAPI#readme"
+  "homepage": "https://github.com/golecl/testingOutGitHubAPI#readme",
+  "dependencies": {
+    "octokit": "^2.0.10"
+  }
 }

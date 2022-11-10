@@ -1,6 +1,6 @@
-import { Octokit } from "octokit";
+import { Octokit } from "https://cdn.skypack.dev/octokit";
 
-const octokit = new Octokit({ 
+export const octokit = new Octokit({ 
   auth: process.env.TOKEN,
 });
 

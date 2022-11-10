@@ -1,4 +1,4 @@
-'use strict';
+//import Octokit from "./.github/actions-scripts/use-the-api.mjs";
 
 const switcher = document.querySelector('.btn');
 
@@ -20,6 +20,12 @@ const octokit = new Octokit({
     auth: 'YOUR-TOKEN',
   });
 
-await octokit.request("GET /octocat", {});
-
 const grapher = document.querySelector('.req');
+
+grapher.addEventListener('click', function(){
+    const graphData = octokit.request("GET /repos/{owner}/{repo}/commits", {
+        owner: "golecl",
+        repo: "testingOutGitHubAPI"
+      });
+    console.log(graphData)
+});
